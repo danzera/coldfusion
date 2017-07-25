@@ -96,5 +96,30 @@
 
   <hr />
 
+  <!--- Loops --->
+  <h1>Loops</h1>
+  <h2>For Loop</h2>
+  <cfloop from="0" to="10" index="i">
+      <p>Index equals <cfoutput>#i#</cfoutput></p>
+  </cfloop>
+
+  <h2>For Each Loop (Complex Variables)</h2>
+
+  <p>Set <b>myArray3</b> to [5, 15, 99, 45, 100]</p>
+
+  <cfset myArray3 = [5, 15, 99, 45, 100] />
+
+  <cfloop array="#myArray3#" index="i">
+      <p>Index equals <cfoutput>#i#</cfoutput></p>
+  </cfloop>
+
+  <p>Set <b>myArray4</b> to ["Alpha", "Bravo", "Charlie", "Delta", "Echo"]</p>
+
+  <cfset myArray4 = ["Alpha", "Bravo", "Charlie", "Delta", "Echo"] />
+
+  <cfloop array="#myArray4#" index="s">
+      <p>Index equals <cfoutput>#s#</cfoutput></p>
+  </cfloop>
+
 </body>
 </html>
