@@ -35,7 +35,7 @@
   <!--- Declaring complex variables --->
   <!--- Declaring an array of 1 dimension: literal or bracket notation --->
   <p>Set <b>myArray1</b> to an array of 1 dimension using literal or bracket notation</p>
-  <cfset myArray1 = [] />
+  <cfset myArray1 = [1,2,3] />
   <!--- Declaring an array of 1 dimension: function notation --->
   <p>Set <b>myArray2</b> to an array of 1 dimension using function notation</p>
   <cfset myArray2 = ArrayNew(1) />
@@ -82,8 +82,19 @@
   <!--- Control Structures --->
   <h1>Control Structures</h1>
 
-  <cfset myCondition = "Test" />
+  <cfset myCondition = "Fair" />
 
   <p>Condition to test for: "<cfoutput>#myCondition#</cfoutput>"</p>
+
+  <cfif myCondition eq "Test">
+      <cfoutput>#myCondition#. We're testing.</cfoutput>
+  <cfelseif myCondition eq "Production">
+      <cfoutput>#myCondition#. Proceed Carefully!!!</cfoutput>
+  <cfelse>
+      myCondition is unknown
+  </cfif>
+
+  <hr />
+
 </body>
 </html>
